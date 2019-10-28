@@ -1,0 +1,3 @@
+[submodule "property-sheets-vs-cpp"]
+	path = property-sheets-vs-cpp
+	url = https://github.com/Tahara256/property-sheets-vs-cpp.git
