@@ -146,7 +146,7 @@
     <ClInclude Include="inc\math\function-templates-impl\sqlt-impl.h" />
     <ClInclude Include="inc\math\integer-types.h" />
     <ClInclude Include="inc\math\function-templates.h" />
-    <ClInclude Include="inc\math\math.h" />
+    <ClInclude Include="inc\math-lib.h" />
     <ClInclude Include="inc\math\meta-functions.h" />
     <ClInclude Include="inc\math\use-type.h" />
     <ClInclude Include="inc\math\vector-2.h" />

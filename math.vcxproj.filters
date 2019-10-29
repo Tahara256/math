@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="inc\math\math.h" />
     <ClInclude Include="inc\math\constants.h" />
     <ClInclude Include="inc\math\integer-types.h" />
     <ClInclude Include="inc\math\meta-functions.h" />
@@ -9,6 +8,7 @@
     <ClInclude Include="inc\math\function-templates.h" />
     <ClInclude Include="inc\math\function-templates-impl\sqlt-impl.h" />
     <ClInclude Include="inc\math\vector-2.h" />
+    <ClInclude Include="inc\math-lib.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vector-2.cpp" />
