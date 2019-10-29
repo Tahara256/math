@@ -10,9 +10,11 @@
     <ClInclude Include="inc\math\vector-2.h" />
     <ClInclude Include="inc\math-lib.h" />
     <ClInclude Include="inc\math\vector-3.h" />
+    <ClInclude Include="inc\math\vector-4.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vector-2.cpp" />
     <ClCompile Include="src\vector-3.cpp" />
+    <ClCompile Include="src\vector-4.cpp" />
   </ItemGroup>
 </Project>
