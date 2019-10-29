@@ -101,7 +101,7 @@ constexpr bool InRange01(T value) noexcept
 template <class Head, class ... Tail>
 constexpr Head Min(Head head, Tail ... tail) noexcept
 {
-    static_assert(IsSameTypeValue<Head, Tail...>, "Template parameters must be same type.");
+    static_assert(MetaFunctions::IsSameTypeValue<Head, Tail...>, "Template parameters must be same type.");
     auto result = head;
     using Swallow = std::initializer_list<int>;
     void(Swallow{ (void(result = result < tail ? result : tail), 0)... });
@@ -114,7 +114,7 @@ constexpr Head Min(Head head, Tail ... tail) noexcept
 template <class Head, class ... Tail>
 constexpr Head Max(Head head, Tail ... tail) noexcept
 {
-    static_assert(IsSameTypeValue<Head, Tail...>, "Template parameters must be same type.");
+    static_assert(MetaFunctions::IsSameTypeValue<Head, Tail...>, "Template parameters must be same type.");
     auto result = head;
     using Swallow = std::initializer_list<int>;
     void(Swallow{ (void(result = result > tail ? result : tail), 0)... });
