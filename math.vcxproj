@@ -149,6 +149,10 @@
     <ClInclude Include="inc\math\math.h" />
     <ClInclude Include="inc\math\meta-functions.h" />
     <ClInclude Include="inc\math\use-type.h" />
+    <ClInclude Include="inc\math\vector-2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\vector-2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
