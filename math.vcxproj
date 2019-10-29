@@ -131,7 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="inc\math\integer-type.h" />
+    <ClInclude Include="inc\math\constants.h" />
+    <ClInclude Include="inc\math\integer-types.h" />
     <ClInclude Include="inc\math\math.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
