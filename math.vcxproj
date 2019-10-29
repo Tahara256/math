@@ -134,6 +134,7 @@
     <ClInclude Include="inc\math\constants.h" />
     <ClInclude Include="inc\math\integer-types.h" />
     <ClInclude Include="inc\math\math.h" />
+    <ClInclude Include="inc\math\meta-functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

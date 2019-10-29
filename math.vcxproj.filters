@@ -4,5 +4,6 @@
     <ClInclude Include="inc\math\math.h" />
     <ClInclude Include="inc\math\constants.h" />
     <ClInclude Include="inc\math\integer-types.h" />
+    <ClInclude Include="inc\math\meta-functions.h" />
   </ItemGroup>
 </Project>
