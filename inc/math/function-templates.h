@@ -3,6 +3,7 @@
 #include <cmath>
 #include "constants.h"
 #include "meta-functions.h"
+#include "function-templates-impl/sqlt-impl.h"
 
 /* 数学関数 templates */
 namespace Math
@@ -576,22 +577,28 @@ TFloat Atan2(TFloat y, TFloat x)
 }
 
 /// <summary>
-/// value の平方根を取得
+/// 任意の値の平方根を取得
 /// </summary>
+/// <param name="value">
+/// 平方根を取得したい値
+/// </param>
 /// <returns>
-/// value の平方根
+/// 平方根
 /// </returns>
 template <class TFloat>
-TFloat Sqrt(TFloat value)
+constexpr TFloat Sqrt(TFloat value) noexcept
 {
-    return std::sqrt(value);
+    return (IsInf(value) || IsZero(value)) ? value : IsPlus(value) ? Impl::RecursiveBabylonianMethod(value, value / static_cast<TFloat>(2)) : NAN;
 }
 
 /// <summary>
-/// value の立方根を取得
+/// 任意の値のの立方根を取得
 /// </summary>
+/// <param name="value">
+/// 立方根を取得したい値
+/// </param>
 /// <returns>
-/// value の立方根
+/// 立方根
 /// </returns>
 template <class TFloat>
 TFloat Cbrt(TFloat value)
