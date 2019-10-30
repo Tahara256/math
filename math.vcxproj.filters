@@ -12,11 +12,13 @@
     <ClInclude Include="inc\math\vector-3.h" />
     <ClInclude Include="inc\math\vector-4.h" />
     <ClInclude Include="inc\math\matrix-4x4.h" />
+    <ClInclude Include="inc\math\quaternion.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vector-2.cpp" />
     <ClCompile Include="src\vector-3.cpp" />
     <ClCompile Include="src\vector-4.cpp" />
     <ClCompile Include="src\matrix-4x4.cpp" />
+    <ClCompile Include="src\quaternion.cpp" />
   </ItemGroup>
 </Project>
