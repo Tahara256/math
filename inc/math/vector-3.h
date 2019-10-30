@@ -620,57 +620,57 @@ public:
     constexpr Vector3 const zzz() const noexcept { return { z, z, z }; }
 
     /// <summary>
-    /// {  0.0f,  0.0f,  0.0f }
+    /// {  0,  0,  0 }
     /// </summary>
     static Vector3 const Zero;
 
     /// <summary>
-    /// {  1.0f,  1.0f,  1.0f }
+    /// {  1,  1,  1 }
     /// </summary>
     static Vector3 const One;
 
     /// <summary>
-    /// {  1.0f,  0.0f,  0.0f }
+    /// {  1,  0,  0 }
     /// </summary>
     static Vector3 const UnitX;
 
     /// <summary>
-    /// {  0.0f,  1.0f,  0.0f }
+    /// {  0,  1,  0 }
     /// </summary>
     static Vector3 const UnitY;
 
     /// <summary>
-    /// {  0.0f,  0.0f,  1.0f }
+    /// {  0,  0,  1 }
     /// </summary>
     static Vector3 const UnitZ;
 
     /// <summary>
-    /// { -1.0f,  0.0f,  0.0f }
+    /// { -1,  0,  0 }
     /// </summary>
     static Vector3 const Left;
 
     /// <summary>
-    /// {  1.0f,  0.0f,  0.0f }
+    /// {  1,  0,  0 }
     /// </summary>
     static Vector3 const Right;
 
     /// <summary>
-    /// {  0.0f, -1.0f,  0.0f }
+    /// {  0, -1,  0 }
     /// </summary>
     static Vector3 const Down;
 
     /// <summary>
-    /// {  0.0f,  1.0f,  0.0f }
+    /// {  0,  1,  0 }
     /// </summary>
     static Vector3 const Up;
 
     /// <summary>
-    /// {  0.0f,  0.0f, -1.0f }
+    /// {  0,  0, -1 }
     /// </summary>
     static Vector3 const Back;
 
     /// <summary>
-    /// {  0.0f,  0.0f,  1.0f }
+    /// {  0,  0,  1 }
     /// </summary>
     static Vector3 const Forward;
 

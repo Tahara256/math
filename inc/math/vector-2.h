@@ -7,7 +7,9 @@
 namespace Math
 {
 
-/// <summary> 二次元ベクトルクラス(浮動小数点数型) </summary>
+/// <summary>
+/// 二次元ベクトルクラス(浮動小数点数型)
+/// </summary>
 class Vector2
 {
 
