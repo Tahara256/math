@@ -1,4 +1,5 @@
 #include <math/matrix-4x4.h>
+#include <math/quaternion.h>
 
 using namespace Math;
 
@@ -40,6 +41,14 @@ Matrix4x4::Matrix4x4(Vector4 const & r1, Vector4 const & r2, Vector4 const & r3,
 
 Matrix4x4::Matrix4x4(Matrix4x4 const & other) :
     r1(other.r1), r2(other.r2), r3(other.r3), r4(other.r4)
+{
+}
+
+Matrix4x4::Matrix4x4(Quaternion const & q) noexcept :
+    r1{ 1 - 2 * q.y * q.y - 2 * q.z * q.z,        2 * q.x * q.y - 2 * q.z * q.w,        2 * q.x * q.z + 2 * q.y * q.w,    static_cast<Float>(0) },
+    r2{     2 * q.x * q.y + 2 * q.z * q.w,    1 - 2 * q.x * q.x - 2 * q.z * q.z,        2 * q.y * q.z - 2 * q.x * q.w,    static_cast<Float>(0) },
+    r3{     2 * q.x * q.z - 2 * q.y * q.w,        2 * q.y * q.z + 2 * q.x * q.w,    1 - 2 * q.x * q.x - 2 * q.y * q.y,    static_cast<Float>(0) },
+    r4{             static_cast<Float>(0),                static_cast<Float>(0),                static_cast<Float>(0),    static_cast<Float>(1) }
 {
 }
 

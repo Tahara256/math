@@ -7,6 +7,11 @@ namespace Math
 {
 
 /// <summary>
+/// クォータニオン(四元数)
+/// </summary>
+class Quaternion;
+
+/// <summary>
 /// 4 × 4 行列
 /// </summary>
 class Matrix4x4
@@ -84,6 +89,14 @@ public:
     /// コピー元の行列
     /// </param>
     Matrix4x4(Matrix4x4 const & other);
+
+    /// <summary>
+    /// コンストラクタ 回転を表すクォータニオンから生成
+    /// </summary>
+    /// <param name="rotation">
+    /// 回転を表すクォータニオン
+    /// </param>
+    explicit Matrix4x4(Quaternion const & rotation) noexcept;
 
     /// <summary>
     /// コピー代入演算子

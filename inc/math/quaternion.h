@@ -10,7 +10,9 @@ namespace Math
 /// </summary>
 class Matrix4x4;
 
-/// <summary> クォータニオン(四元数) </summary>
+/// <summary>
+/// クォータニオン(四元数)
+/// </summary>
 class Quaternion
 {
 
@@ -296,6 +298,14 @@ public:
     /// ベクトルとした虚数部
     /// </returns>
     constexpr operator Vector3() const noexcept { return { x, y, z }; }
+
+    /// <summary>
+    /// オイラー角を取得
+    /// </summary>
+    /// <returns>
+    /// オイラー角
+    /// </returns>
+    Vector3 const EulerAngles() const noexcept;
 
     /// <summary>
     /// 共役クォータニオンを取得

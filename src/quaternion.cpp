@@ -40,6 +40,11 @@ Quaternion::Quaternion(Matrix4x4 const & m) noexcept
     }
 }
 
+Vector3 const Quaternion::EulerAngles() const noexcept
+{
+    return Matrix4x4(*this).EulerAngles();
+}
+
 Quaternion const Quaternion::Lerp(Quaternion const & other, Float t) const
 {
     auto const cos = Dot(other);
