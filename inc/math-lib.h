@@ -11,3 +11,10 @@
 #include "math/vector-3.h"
 // 四次元
 #include "math/vector-4.h"
+
+/* 行列クラス */
+// 4x4
+#include "math/matrix-4x4.h"
+
+/* 四元数クラス */
+#include "math/quaternion.h"
