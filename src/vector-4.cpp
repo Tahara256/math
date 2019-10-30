@@ -10,6 +10,11 @@ Math::Vector4 const Math::Vector4::UnitW{ static_cast<Float>(0), static_cast<Flo
 
 Math::Vector4::Vector4(Vector3 const & xyz, Float w) noexcept : Vector4(xyz.x, xyz.y, xyz.z, w) { }
 
+Math::Vector3 const Math::Vector4::xyz() const noexcept
+{
+    return { x, y, z };
+}
+
 std::ostream & Math::operator << (std::ostream & os, Vector4 const & v)
 {
     return os << "{ " << v.x << ", " << v.y << ", " << v.z << ", " << v.w << " }";

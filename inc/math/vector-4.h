@@ -329,6 +329,11 @@ public:
     void Normalize() noexcept { *this = Normalized(); }
 
     /// <summary>
+    /// { x, y, z }
+    /// </summary>
+    Vector3 const xyz() const noexcept;
+
+    /// <summary>
     /// { 0, 0, 0, 0 }
     /// </summary>
     static Vector4 const Zero;
