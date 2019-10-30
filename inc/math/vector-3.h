@@ -1,8 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include "use-type.h"
 #include "function-templates.h"
+#include "i-random.h"
 
 namespace Math
 {
@@ -673,6 +673,42 @@ public:
     /// {  0,  0,  1 }
     /// </summary>
     static Vector3 const Forward;
+
+    /// <summary>
+    /// 単位球の表面上のランダムな点を取得
+    /// </summary>
+    /// <param name="random">
+    /// 一様分布乱数取得インタフェース
+    /// </param>
+    /// <returns>
+    /// 単位球の表面上のランダムな点
+    /// </returns>
+    static Vector3 const CreateRandomOnUnitSphere(IRandom & random);
+
+    /// <summary>
+    /// 単位球の内部のランダムな点を取得
+    /// </summary>
+    /// <param name="random">
+    /// 一様分布乱数取得インタフェース
+    /// </param>
+    /// <returns>
+    /// 単位球の内部のランダムな点
+    /// </returns>
+    static Vector3 const CreateRandomInUnitSphere(IRandom & random);
+
+    /// <summary>
+    /// 単位半球の表面上のランダムな点を取得
+    /// </summary>
+    /// <param name="random">
+    /// 一様分布乱数取得インタフェース
+    /// </param>
+    /// <param name="normal">
+    /// 半球の頂点
+    /// </param>
+    /// <returns>
+    /// 単位半球の表面上のランダムな点
+    /// </returns>
+    static Vector3 const CreateRandomOnUnitHemisphere(IRandom & random, Vector3 const & top);
 
 };
 
