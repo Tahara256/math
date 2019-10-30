@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="inc\math\constants.h" />
     <ClInclude Include="inc\math\function-templates-impl\sqlt-impl.h" />
+    <ClInclude Include="inc\math\i-random.h" />
     <ClInclude Include="inc\math\integer-types.h" />
     <ClInclude Include="inc\math\function-templates.h" />
     <ClInclude Include="inc\math-lib.h" />

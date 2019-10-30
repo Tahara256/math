@@ -13,6 +13,7 @@
     <ClInclude Include="inc\math\vector-4.h" />
     <ClInclude Include="inc\math\matrix-4x4.h" />
     <ClInclude Include="inc\math\quaternion.h" />
+    <ClInclude Include="inc\math\i-random.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vector-2.cpp" />
