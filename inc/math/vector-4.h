@@ -8,6 +8,11 @@ namespace Math
 {
 
 /// <summary>
+/// 三次元ベクトルクラス(浮動小数点数型)
+/// </summary>
+class Vector3;
+
+/// <summary>
 /// 四次元ベクトルクラス(浮動小数点数型)
 /// </summary>
 class Vector4
@@ -68,6 +73,17 @@ public:
     /// xyzw 成分全てに割り当てる値
     /// </param>
     constexpr explicit Vector4(Float value) noexcept : Vector4(value, value, value, value) { }
+
+    /// <summary>
+    /// コンストラクタ
+    /// </summary>
+    /// <param name="xyz">
+    /// この三次元ベクトルを xyz 成分に割り当てる
+    /// </param>
+    /// <param name="w">
+    /// w 成分
+    /// </param>
+    explicit Vector4(Vector3 const & xyz, Float w) noexcept;
 
     /// <summary>
     /// 単項プラス演算子
