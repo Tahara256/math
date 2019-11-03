@@ -336,6 +336,21 @@ constexpr bool Approximately(TFloat value1, TFloat value2) noexcept
 }
 
 /// <summary>
+/// ‹t”‚ğæ“¾
+/// </summary>
+/// <param name="value">
+/// ‹t”‚ğæ“¾‚·‚é’l
+/// </param>
+/// <returns>
+/// ‹t”
+/// </returns>
+template <class TFloat>
+constexpr TFloat Recip(TFloat value) noexcept
+{
+    return static_cast<TFloat>(1) / value;
+}
+
+/// <summary>
 /// ¬”•”‚ğØ‚èÌ‚Ä‚½’l‚ğæ“¾
 /// </summary>
 /// <param name="value">
