@@ -283,6 +283,24 @@ constexpr T Pow5(T b) noexcept
 }
 
 /// <summary>
+/// 仮数部と指数部から浮動小数点数を取得
+/// </summary>
+/// <param name="x">
+/// 仮数部
+/// </param>
+/// <param name="exp">
+/// 指数部
+/// </param>
+/// <returns>
+/// 浮動小数点数
+/// </returns>
+template <class TFloat>
+TFloat Ldexp(TFloat x, I32 exp) noexcept
+{
+    return std::ldexp(x, exp);
+}
+
+/// <summary>
 /// 値が無限大かを取得
 /// </summary>
 /// <param name="value">
