@@ -13,6 +13,8 @@
 #include "math/vector-4.h"
 
 /* s—ñƒNƒ‰ƒX */
+// 3x3
+#include "math/matrix-3x3.h"
 // 4x4
 #include "math/matrix-4x4.h"
 
