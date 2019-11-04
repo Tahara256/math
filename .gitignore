@@ -1,3 +1,5 @@
 .vs/
 lib/
 obj/
+
+*.vcxproj.user
