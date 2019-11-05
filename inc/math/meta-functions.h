@@ -40,6 +40,12 @@ struct IsSameType : IsSameTuple<std::tuple<Types...>> { };
 template <class ... Types>
 constexpr bool IsSameTypeValue = IsSameType<Types...>::value;
 
+/// <summary>
+/// コンパイルを遅らせたいfalse static_assert()等で使用
+/// </summary>
+template <class T>
+constexpr bool FalseValue = false;
+
 } // namespace MetaFunctions
 
 } // namespace Math
