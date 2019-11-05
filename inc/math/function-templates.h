@@ -367,7 +367,25 @@ constexpr TFloat Trunc(TFloat value) noexcept
 }
 
 /// <summary>
-/// 剰余を取得
+/// 剰余を取得(整数型)
+/// </summary>
+/// <param name="value1">
+/// 被除数
+/// </param>
+/// <param name="value2">
+/// 除数
+/// </param>
+/// <returns>
+/// 剰余
+/// </returns>
+template <class TInt>
+constexpr TInt ModInt(TInt value1, TInt value2) noexcept
+{
+    return value1 % value2;
+}
+
+/// <summary>
+/// 剰余を取得(浮動小数点数型)
 /// </summary>
 /// <param name="value1">
 /// 被除数
@@ -379,10 +397,38 @@ constexpr TFloat Trunc(TFloat value) noexcept
 /// 剰余
 /// </returns>
 template <class TFloat>
-constexpr TFloat Mod(TFloat value1, TFloat value2) noexcept
+constexpr TFloat ModFloat(TFloat value1, TFloat value2) noexcept
 {
-    static_assert(std::is_floating_point_v<TFloat>, "Type must be floating point type.");
     return value1 - Trunc(value1 / value2) * value2;
+}
+
+/// <summary>
+/// 剰余を取得
+/// </summary>
+/// <param name="value1">
+/// 被除数
+/// </param>
+/// <param name="value2">
+/// 除数
+/// </param>
+/// <returns>
+/// 剰余
+/// </returns>
+template <class TArith>
+constexpr TArith Mod(TArith value1, TArith value2) noexcept
+{
+    // 整数の剰余
+    if constexpr (std::is_integral_v<TArith>) {
+        return ModInt(value1, value2);
+    }
+    // 浮動小数点数の剰余
+    else if constexpr (std::is_floating_point_v<TArith>) {
+        return ModFloat(value1, value2);
+    }
+    // 算術型ではないのでコンパイルエラー
+    else {
+        static_assert(MetaFunctions::FalseValue<TArith>, "Type must be numeric type.");
+    }
 }
 
 /// <summary>
