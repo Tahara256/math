@@ -431,6 +431,18 @@ constexpr TArith Mod(TArith value1, TArith value2) noexcept
     }
 }
 
+/// <summary> ラップアラウンド(上限を上回ったら下限に、下限を下回ったら上限に戻した値を取得) </summary>
+/// <param name="value"> ラップする値 </param>
+/// <param name="low"> 下限値 </param>
+/// <param name="high"> 上限値 </param>
+/// <returns> ラップした値 </returns>
+template <class TArith>
+constexpr TArith Wrap(TArith value, TArith low, TArith high) noexcept
+{
+    auto num = Mod(value - low, high - low);
+    return num < static_cast<TArith>(0) ? num + high : num + low;
+}
+
 /// <summary>
 /// 指定された値の小数部を取得
 /// </summary>
