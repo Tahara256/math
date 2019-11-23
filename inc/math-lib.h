@@ -20,3 +20,7 @@
 
 /* 四元数クラス */
 #include "math/quaternion.h"
+
+/* 色情報クラス(不動小数点数型) */
+// RGB
+#include "math/color-3-f.h"
