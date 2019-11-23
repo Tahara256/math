@@ -143,7 +143,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="inc\math\color-3-b.h" />
     <ClInclude Include="inc\math\color-3-f.h" />
+    <ClInclude Include="inc\math\color-4-b.h" />
     <ClInclude Include="inc\math\constants.h" />
     <ClInclude Include="inc\math\function-templates-impl\sqlt-impl.h" />
     <ClInclude Include="inc\math\i-random.h" />
@@ -160,7 +162,9 @@
     <ClInclude Include="inc\math\vector-4.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\color-3-b.cpp" />
     <ClCompile Include="src\color-3-f.cpp" />
+    <ClCompile Include="src\color-4-b.cpp" />
     <ClCompile Include="src\matrix-3x3.cpp" />
     <ClCompile Include="src\matrix-4x4.cpp" />
     <ClCompile Include="src\quaternion.cpp" />
