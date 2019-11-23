@@ -18,6 +18,7 @@
     <ClInclude Include="inc\math\color-3-f.h" />
     <ClInclude Include="inc\math\color-3-b.h" />
     <ClInclude Include="inc\math\color-4-b.h" />
+    <ClInclude Include="inc\math\ray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vector-2.cpp" />
@@ -29,5 +30,6 @@
     <ClCompile Include="src\color-3-f.cpp" />
     <ClCompile Include="src\color-3-b.cpp" />
     <ClCompile Include="src\color-4-b.cpp" />
+    <ClCompile Include="src\ray.cpp" />
   </ItemGroup>
 </Project>

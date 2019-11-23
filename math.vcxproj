@@ -156,6 +156,7 @@
     <ClInclude Include="inc\math\matrix-4x4.h" />
     <ClInclude Include="inc\math\meta-functions.h" />
     <ClInclude Include="inc\math\quaternion.h" />
+    <ClInclude Include="inc\math\ray.h" />
     <ClInclude Include="inc\math\use-type.h" />
     <ClInclude Include="inc\math\vector-2.h" />
     <ClInclude Include="inc\math\vector-3.h" />
@@ -168,6 +169,7 @@
     <ClCompile Include="src\matrix-3x3.cpp" />
     <ClCompile Include="src\matrix-4x4.cpp" />
     <ClCompile Include="src\quaternion.cpp" />
+    <ClCompile Include="src\ray.cpp" />
     <ClCompile Include="src\vector-2.cpp" />
     <ClCompile Include="src\vector-3.cpp" />
     <ClCompile Include="src\vector-4.cpp" />

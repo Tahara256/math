@@ -21,6 +21,10 @@
 /* 四元数クラス */
 #include "math/quaternion.h"
 
+/* レイクラス */
+#include "math/ray.h"
+
+
 /* 色情報クラス(整数型) */
 // RGB
 #include "math/color-3-b.h"
