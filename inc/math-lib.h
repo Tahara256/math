@@ -4,6 +4,12 @@
 
 /*-- math header files --*/
 
+/* ベクトルクラス(整数型) */
+// 二次元
+#include "math/point-2.h"
+// 整数型毎のエイリアス
+#include "math/point-aliases.h"
+
 /* ベクトルクラス(浮動小数点数型) */
 // 二次元
 #include "math/vector-2.h"

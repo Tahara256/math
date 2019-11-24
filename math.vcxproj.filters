@@ -19,6 +19,8 @@
     <ClInclude Include="inc\math\color-3-b.h" />
     <ClInclude Include="inc\math\color-4-b.h" />
     <ClInclude Include="inc\math\ray.h" />
+    <ClInclude Include="inc\math\point-2.h" />
+    <ClInclude Include="inc\math\point-aliases.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vector-2.cpp" />

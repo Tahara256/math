@@ -155,6 +155,8 @@
     <ClInclude Include="inc\math\matrix-3x3.h" />
     <ClInclude Include="inc\math\matrix-4x4.h" />
     <ClInclude Include="inc\math\meta-functions.h" />
+    <ClInclude Include="inc\math\point-2.h" />
+    <ClInclude Include="inc\math\point-aliases.h" />
     <ClInclude Include="inc\math\quaternion.h" />
     <ClInclude Include="inc\math\ray.h" />
     <ClInclude Include="inc\math\use-type.h" />
