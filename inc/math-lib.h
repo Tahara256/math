@@ -30,6 +30,10 @@
 /* レイクラス */
 #include "math/ray.h"
 
+/* 矩形サイズクラス */
+#include "math/rect-size.h"
+// 要素型毎のエイリアス
+#include "math/rect-size-aliases.h"
 
 /* 色情報クラス(整数型) */
 // RGB

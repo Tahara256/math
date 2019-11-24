@@ -159,6 +159,8 @@
     <ClInclude Include="inc\math\point-aliases.h" />
     <ClInclude Include="inc\math\quaternion.h" />
     <ClInclude Include="inc\math\ray.h" />
+    <ClInclude Include="inc\math\rect-size-aliases.h" />
+    <ClInclude Include="inc\math\rect-size.h" />
     <ClInclude Include="inc\math\use-type.h" />
     <ClInclude Include="inc\math\vector-2.h" />
     <ClInclude Include="inc\math\vector-3.h" />
